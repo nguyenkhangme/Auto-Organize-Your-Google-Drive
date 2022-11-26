@@ -51,20 +51,30 @@ mv *.MOV ./videos
 
 # move files using name:  Untitled
 
-declare -a toMove
+moveFilesUsingName(){
+    declare -a toMove
+    name=$1
+    folder_name=$2
 
-cd gdoc
+    cd "$driveDirectory/gdoc"
+    mkdir -p $folder_name
 
-find . -type f | grep -i "Untitled" > listUntitledFile.txt
+    find . -type f | grep -i $name > listFile.txt
 
-while read -r file
-do
-    toMove+=("$file")
-done < "listUntitledFile.txt"
+    while read -r file
+    do
+        toMove+=("$file")
+    done < "listFile.txt"
 
-for ((i = 0; i < ${#toMove[@]}; i++))
-do
-    mv "${toMove[$i]}" ./Untitled
-done
+    for ((i = 0; i < ${#toMove[@]}; i++))
+    do
+        # echo "${toMove[$i]}"
+        # echo "---"
+        mv "${toMove[$i]}" ./$folder_name
+    done
+}
+
+moveFilesUsingName "Untitled" "Untitled"
+moveFilesUsingName "Assignment" "Assignments"
 
 
