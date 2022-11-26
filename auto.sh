@@ -52,6 +52,8 @@ mv *.MOV ./videos
 # move files using name:  Untitled
 
 moveFilesUsingName(){
+    # move file with name contains $1 to folder $2
+    # call: moveFilesUsingName "<name want to search>" "<folder want to move files in>"
     declare -a toMove
     name="$1"
     echo "name to find: $name"
