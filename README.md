@@ -19,6 +19,8 @@ chmod u+x auto.sh
 ./auto.sh "<path of your google drive folder>"
 ```
 
+![execute](execute.png)  
+
 To get the path of your Google Drive folder, new Terminal (or Command Prompt,...) in the Google Drive folder and run: `pwd`. This will print the path to the screen.
 
 Usually, the path will contain space: My Drive, so you need to quote the path.
