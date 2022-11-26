@@ -16,6 +16,8 @@ driveDirectory=$1
 
 cd "$driveDirectory"
 
+# create folders if they do not exist
+
 mkdir -p gdoc
 mkdir -p gform
 mkdir -p gsheet 
@@ -25,10 +27,14 @@ mkdir -p pdf
 mkdir -p photos
 mkdir -p videos 
 
+# move Google files to the corresponding folders
+
 mv *.gdoc ./gdoc
 mv *.gform ./gform
 mv *.gsheet ./gsheet
 mv *.gslides ./gslides
+
+# move other files to the corresponding folders
 
 mv *.docx ./docx
 mv *.doc ./docx
