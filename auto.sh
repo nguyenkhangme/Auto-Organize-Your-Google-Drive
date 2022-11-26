@@ -53,13 +53,15 @@ mv *.MOV ./videos
 
 moveFilesUsingName(){
     declare -a toMove
-    name=$1
-    folder_name=$2
+    name="$1"
+    echo "name to find: $name"
+    folder_name="$2"
+    echo "move to folder: $folder_name"
 
     cd "$driveDirectory/gdoc"
-    mkdir -p $folder_name
+    mkdir -p "$folder_name"
 
-    find . -type f | grep -i $name > listFile.txt
+    find . -type f | grep -i "$name" > listFile.txt
 
     while read -r file
     do
@@ -70,11 +72,13 @@ moveFilesUsingName(){
     do
         # echo "${toMove[$i]}"
         # echo "---"
-        mv "${toMove[$i]}" ./$folder_name
+        mv "${toMove[$i]}" ./"$folder_name"
     done
 }
 
 moveFilesUsingName "Untitled" "Untitled"
 moveFilesUsingName "Assignment" "Assignments"
+# moveFilesUsingName "hdh" "hệ điều hành"
+
 
 
