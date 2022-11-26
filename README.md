@@ -2,6 +2,15 @@
 
 Auto-organize your google drive using the power of shell
 
+## Organize what?
+
+This script helps you move files to the corresponding folders such as:
+
+- Move files with png, jpg, PNG, and JPG extensions to folder photos
+- Move files with gdoc extensions to folder gdoc (Normally your google docs, sheet, form, and slides files will be saved directly in the My Drive folder, this makes the Drive folder become a mess)
+
+And many more options which you can custom yourself!
+
 ## Requirements
 
 - Already installed Google Drive for desktop. If not, click [here](https://www.google.com/drive/download/) to download it from Google.
