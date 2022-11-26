@@ -85,7 +85,7 @@ moveFilesUsingName(){
 
 moveFilesUsingName "Untitled" "Untitled"
 moveFilesUsingName "Assignment" "Assignments"
-moveFilesUsingName "Tài liệu không có tiêu đề" "Assignments"
+moveFilesUsingName "Tài liệu không có tiêu đề" "Untitled"
 
 
 
