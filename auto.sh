@@ -72,6 +72,7 @@ moveFilesUsingName(){
     do
         # echo "${toMove[$i]}"
         # echo "---"
+        # comment the line below if you want to search first (see file listFile.txt)
         mv "${toMove[$i]}" ./"$folder_name"
     done
 }
