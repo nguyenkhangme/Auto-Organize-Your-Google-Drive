@@ -6,8 +6,11 @@ Auto-organize your google drive using the power of shell
 
 This script helps you move files to the corresponding folders such as:
 
-- Move files with png, jpg, PNG, and JPG extensions to folder photos
-- Move files with gdoc extensions to folder gdoc (Normally your google docs, sheet, form, and slides files will be saved directly in the My Drive folder, this makes the Drive folder become a mess)
+- Using file extension:
+  - Move files with png, jpg, PNG, and JPG extensions to folder photos
+  - Move files with gdoc extensions to folder gdoc (Normally your google docs, sheet, form, and slides files will be saved directly in the My Drive folder, this makes the Drive folder become a mess)
+- Using file name:
+  - Move gdoc files with Untitled in name to folder Untitled
 
 And many more options which you can custom yourself!
 

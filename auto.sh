@@ -49,3 +49,22 @@ mv *.PNG ./photos
 mv *.mp4 ./videos
 mv *.MOV ./videos
 
+# move files using name:  Untitled
+
+declare -a toMove
+
+cd gdoc
+
+find . -type f | grep -i "Untitled" > listUntitledFile.txt
+
+while read -r file
+do
+    toMove+=("$file")
+done < "listUntitledFile.txt"
+
+for ((i = 0; i < ${#toMove[@]}; i++))
+do
+    mv "${toMove[$i]}" ./Untitled
+done
+
+
