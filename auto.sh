@@ -70,16 +70,16 @@ moveFilesUsingName(){
 
     for ((i = 0; i < ${#toMove[@]}; i++))
     do
+        # uncomment 2 lines below and comment line76 if you want to search first
         # echo "${toMove[$i]}"
         # echo "---"
-        # comment the line below if you want to search first (see file listFile.txt)
         mv "${toMove[$i]}" ./"$folder_name"
     done
 }
 
 moveFilesUsingName "Untitled" "Untitled"
 moveFilesUsingName "Assignment" "Assignments"
-# moveFilesUsingName "hdh" "hệ điều hành"
+# moveFilesUsingName "đồ án" "Assignments"
 
 
 
