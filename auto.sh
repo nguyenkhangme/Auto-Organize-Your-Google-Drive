@@ -60,6 +60,7 @@ moveFilesUsingName(){
     folder_name="$2"
     echo "move to folder: $folder_name"
 
+    # Change gdoc to move files in other directories
     cd "$driveDirectory/gdoc"
     mkdir -p "$folder_name"
 
