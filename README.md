@@ -38,3 +38,15 @@ chmod u+x auto.sh
 To get the path of your Google Drive folder, new Terminal (or Command Prompt,...) in the Google Drive folder and run: `pwd`. This will print the path to the screen.
 
 Usually, the path will contain space: My Drive, so you need to quote the path.
+
+## Schedule with cron
+
+Schedule help this script run automatically every day (or every minute, every week,...).
+
+Update soon...
+
+---
+Development discussion:
+
+- Difference between the default environment for a cron job and the user's environment.
+---

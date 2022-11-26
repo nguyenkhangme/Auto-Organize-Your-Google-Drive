@@ -80,9 +80,12 @@ moveFilesUsingName(){
     done
 }
 
+# When moving files using the name, what if there is a file whose name could be on multiple categories 
+# -> make sure you put the code on the right priorities you want
+
 moveFilesUsingName "Untitled" "Untitled"
 moveFilesUsingName "Assignment" "Assignments"
-# moveFilesUsingName "đồ án" "Assignments"
+moveFilesUsingName "Tài liệu không có tiêu đề" "Assignments"
 
 
 
