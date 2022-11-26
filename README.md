@@ -12,7 +12,7 @@ Auto-organize your google drive using the power of shell
 
 ![download the repo as a zip](images/downloadzip.png)
 
-2. Run:
+2. New Terminal (or Command Prompt,...) at the folder you just downloaded and run:
 
 ```terminal
 chmod u+x auto.sh
