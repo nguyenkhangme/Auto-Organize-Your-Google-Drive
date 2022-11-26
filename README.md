@@ -17,7 +17,7 @@ And many more options which you can custom yourself!
 
 ## How to use
 
-:warning: Please check the content of the file auto.sh before using this, make sure there is no conflict with your Google Drive structure, such as if you already have a photos folder for the pictures of your family, if you do not adjust the script, it will copy all other photos from My Drive to your photos folder. 
+:warning: Please check the content of the file [auto.sh](./auto.sh) before using this, make sure there is no conflict with your Google Drive structure, such as if you already have a photos folder for the pictures of your family, if you do not adjust the script, it will copy all other photos from My Drive to your photos folder. 
 
 1. Download the repo to your computer, or clone it:
 
