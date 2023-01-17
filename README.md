@@ -39,6 +39,10 @@ To get the path of your Google Drive folder, new Terminal (or Command Prompt,...
 
 Usually, the path will contain space: My Drive, so you need to quote the path.
 
+## Makefile
+
+Update soon...
+
 ## Schedule with cron
 
 Schedule help this script run automatically every day (or every minute, every week,...).
